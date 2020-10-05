@@ -1,0 +1,6 @@
+11:05:16.802 NOTICE n.n.g.GridCalc - Trial 0: running from 0.0 to 1500000.0 ms
+12:51:23.202 NOTICE n.n.g.GridCalc - Trial 0: total run time 6366398 ms
+12:51:23.203 NOTICE n.n.g.StochasticGridCalc - Used up 6553191026 random numbers
+12:51:23.203 NOTICE n.n.g.AdaptiveGridCalc - Accuracy control parameter ε=0.01
+12:51:23.203 NOTICE n.n.g.AdaptiveGridCalc - Leapt 197529115 (50260124 firings, 3.930135846859431 f/l average), waited 6179668261 times
+12:51:23.206 NOTICE n.n.g.AdaptiveGridCalc - Real simulation took 1:46:06 (6366549 ms, 235.60644864274192 ms/s)

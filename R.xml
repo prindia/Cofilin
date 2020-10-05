@@ -1,0 +1,100 @@
+<Specie name="AC1" id="AC1" kdiff="0" kdiffunit="mu2/s"/>
+<Specie name="AC1Gsa" id="AC1Gsa" kdiff="0" kdiffunit="mu2/s"/>
+<Specie name="AC1GsaCamCa4" id="AC1GsaCamCa4" kdiff="0" kdiffunit="mu2/s"/>
+<Specie name="AC1GsaCamCa4ATP" id="AC1GsaCamCa4ATP" kdiff="0" kdiffunit="mu2/s"/>
+<Specie name="AC1CamCa4" id="AC1CamCa4" kdiff="0" kdiffunit="mu2/s"/>
+<Specie name="AC1CamCa4ATP" id="AC1CamCa4ATP" kdiff="0" kdiffunit="mu2/s"/>
+
+
+<!-- ############### AC1 activated by Gs and CamCa4 ###################-->
+
+<!-- 1a) GsaGTP + AC1 <-> AC1GsaGTP   -->
+    <Reaction name = "GsaGTP_AC1_reac" id="GsaGTP_AC1_reac">
+	<Reactant specieID="GsaGTP"/>
+	<Reactant specieID="AC1"/>
+	<Product specieID="AC1Gsa"/>
+
+	<forwardRate>0.0385e-3</forwardRate>
+	<reverseRate>10e-3</reverseRate>
+	<Q10>0.2</Q10>
+
+    </Reaction>
+
+<!-- 1b) AC1GsaGTP + CamCa4 <-> AC1GsaGTPCamCa4    -->
+    <Reaction name = "AC1GsaGTP_CamCa4_Reac" id="AC1GsaGTP_CamCa4_Reac">
+	<Reactant specieID="AC1Gsa"/>
+	<Reactant specieID="CamCa4"/>
+	<Product specieID="AC1GsaCamCa4"/>
+
+	<forwardRate>0.006e-3</forwardRate>
+	<reverseRate>0.9e-3</reverseRate>
+	<Q10>0.2</Q10>
+
+    </Reaction>
+
+
+<!-- 1c) AC1GsaGTPCamCa4 + ATP <-> AC1GsaGTPCamCa4ATP    -->
+    <Reaction name = "AC1GsaGTPCamCa4_ATP_Reac" id="AC1GsaGTPCamCa4_ATP_Reac">
+	<Reactant specieID="AC1GsaCamCa4"/>
+	<!--Reactant specieID="ATP"/-->
+	<Product specieID="AC1GsaCamCa4ATP"/>
+	<!-- if ATP: forwardRate>0.01e-3</forwardRate-->
+	<forwardRate>20e-3</forwardRate>
+	<reverseRate>2273e-3</reverseRate>
+	<Q10>0.2</Q10>
+
+    </Reaction>
+
+
+<!-- 1d)AC1GsaGTPCamCa4ATP -> AC1GsaGTPCamCa4 + cAMP    -->
+    <Reaction name = "AC1GsaGTPCamCa4ATP_diss" id="AC1GsaGTPCamCa4ATP_diss">
+	<Reactant specieID="AC1GsaCamCa4ATP"/>
+	<Product specieID="cAMP"/>
+	<Product specieID="AC1GsaCamCa4"/>
+
+	<forwardRate>56.84e-3</forwardRate>
+	<reverseRate>0</reverseRate>
+	<Q10>0.2</Q10>
+    </Reaction>
+
+
+<!-- 5a) AC1 + CamCa4 <-> AC1Cam    -->
+    <Reaction name = "AC1CamCa4_Reac" id="AC1CamCa4_Reac">
+	<Reactant specieID="AC1"/>
+	<Reactant specieID="CamCa4"/>
+	<Product specieID="AC1CamCa4"/>
+
+	<forwardRate>0.006e-3</forwardRate>
+	<reverseRate>0.9e-3</reverseRate>
+	<Q10>0.2</Q10>
+    </Reaction>
+
+
+
+<!-- 5b) AC1Cam + ATP <-> AC1CamATP    -->
+
+    <Reaction name = "AC1CamCa4ATP_bind" id="AC1CamCa4ATP_bind">
+
+	<Reactant specieID="AC1CamCa4"/>
+	<!--Reactant specieID="ATP"/-->
+	<Product specieID="AC1CamCa4ATP"/>
+	<!-- if ATP:forwardRate>0.01e-3</forwardRate-->
+	<forwardRate>20</forwardRate>
+	<reverseRate>2273e-3</reverseRate>
+	<Q10>0.2</Q10>
+    </Reaction>
+
+<!-- 5c) AC1CamATP -> AC1Cam +cAMP    -->
+
+<Reaction name = "AC1CamCa4ATP_disso" id="AC1CamCa4ATP_disso">
+        <Reactant specieID="AC1CamCa4ATP"/>
+	<Product specieID="cAMP"/>
+	<Product specieID="AC1CamCa4"/>
+
+	<forwardRate>5.684e-3</forwardRate>
+	<reverseRate>0</reverseRate>
+	<Q10>0.2</Q10>
+
+    </Reaction>
+
+    
