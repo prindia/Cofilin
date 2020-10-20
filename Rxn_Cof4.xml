@@ -18,15 +18,15 @@ phosphatase reactions take from revision of Gs to improve Ca dep dphos of Dp32--
 <Specie kdiffunit="mu2/s" kdiff="0" id="RacPAKLIMK" name="RacPAKLIMK"/>
 <Specie kdiffunit="mu2/s" kdiff="15.5" id="PAK" name="PAK"/>
 <Specie kdiffunit="mu2/s" kdiff="15.5" id="RacPAK" name="RacPAK"/>
-<Specie kdiffunit="mu2/s" kdiff="7" id="RacGTP" name="RacGTP"/>
+<Specie kdiffunit="mu2/s" kdiff="22.15" id="RacGTP" name="RacGTP"/>
 <Specie kdiffunit="mu2/s" kdiff="0" id="RacGDP" name="RacGDP"/>
-<Specie kdiffunit="mu2/s" kdiff="7" id="RacGap" name="RacGap"/>
-<Specie kdiffunit="mu2/s" kdiff="7" id="Gap" name="Gap"/>
+<Specie kdiffunit="mu2/s" kdiff="0" id="RacGap" name="RacGap"/>
+<Specie kdiffunit="mu2/s" kdiff="22.15" id="Gap" name="Gap"/>
 
-<Specie kdiffunit="mu2/s" kdiff="7" id="pKalRac" name="pKalRac"/>
-<Specie kdiffunit="mu2/s" kdiff="7" id="pKal" name="pKal"/>
-<Specie kdiffunit="mu2/s" kdiff="7" id="KalCKpCamCa4" name="KalCKpCamCa4"/>
-<Specie kdiffunit="mu2/s" kdiff="7" id="Kal" name="Kal"/>
+<Specie kdiffunit="mu2/s" kdiff="10.89" id="pKalRac" name="pKalRac"/>
+<Specie kdiffunit="mu2/s" kdiff="10.89" id="pKal" name="pKal"/>
+<Specie kdiffunit="mu2/s" kdiff="0" id="KalCKpCamCa4" name="KalCKpCamCa4"/>
+<Specie kdiffunit="mu2/s" kdiff="10.89" id="Kal" name="Kal"/>
 
 <Specie name="CaN"           id="CaN"          kdiff="0"     kdiffunit="mu2/s"/>
 <Specie name="CaNCam"        id="CaNCam"       kdiff="0"     kdiffunit="mu2/s"/>
@@ -35,10 +35,10 @@ phosphatase reactions take from revision of Gs to improve Ca dep dphos of Dp32--
 <Specie name="CaNCamCa4"        id="CaNCamCa4"       kdiff="0"     kdiffunit="mu2/s"/>
 <Specie name="CaNCamCa4pSSH"        id="CaNCamCa4pSSH"       kdiff="0"     kdiffunit="mu2/s"/>
 <Specie name="pSSH"        id="pSSH"       kdiff="0"     kdiffunit="mu2/s"/>
-<Specie kdiffunit="mu2/s" kdiff="7" id="SSH" name="SSH"/>
-<Specie kdiffunit="mu2/s" kdiff="7" id="SSHpLIMK" name="SSHpLIMK"/>
-<Specie kdiffunit="mu2/s" kdiff="7" id="SSHpCof" name="SSHpCof"/>
-<Specie kdiffunit="mu2/s" kdiff="7" id="RacPAKSSH" name="RacPAKSSH"/>
+<Specie kdiffunit="mu2/s" kdiff="12.19" id="SSH" name="SSH"/>
+<Specie kdiffunit="mu2/s" kdiff="0" id="SSHpLIMK" name="SSHpLIMK"/>
+<Specie kdiffunit="mu2/s" kdiff="0" id="SSHpCof" name="SSHpCof"/>
+<Specie kdiffunit="mu2/s" kdiff="0" id="RacPAKSSH" name="RacPAKSSH"/>
 
 
 <!-- calcium reaction subset, to adjust for proper basal calcium -->
@@ -134,9 +134,12 @@ phosphatase reactions take from revision of Gs to improve Ca dep dphos of Dp32--
 <Specie name="PKAc"                                id="PKAc"                kdiff="0.836"    kdiffunit="mu2/s"/>
 <Specie name="PKAr"                                id="PKAr"                kdiff="0"    kdiffunit="mu2/s"/>
 <Specie name="KalPKAc"                             id="KalPKAc"                kdiff="0"    kdiffunit="mu2/s"/>
-<Specie name="PKAcLIMK"                            id="PKAcLIMK"              kdiff="7"         kdiffunit="mu2/s"/>
+<Specie name="PKAcLIMK"                            id="PKAcLIMK"              kdiff="0"         kdiffunit="mu2/s"/>
 
-    
+<!-- actin binding to Cof -->    
+<Specie name="actin"                            id="actin"                kdiff="0"    kdiffunit="mu2/s"/>
+<Specie name="Cofactin"                            id="Cofactin"                kdiff="0"    kdiffunit="mu2/s"/>
+
 <!--****************************************************************************
 Now, the reactions themselves
 ****************************************************************************-->
@@ -1354,5 +1357,18 @@ Now, the reactions themselves
 	<reverseRate>0</reverseRate>
 	<Q10>0.2</Q10>
        </Reaction>
-       
+
+
+
+<!--Actin binding to -->
+<Reaction id= "actin+Cof--Cofactin" name="actin+Cof--Cofactin">
+<Reactant specieID="actin"/>
+<Reactant specieID="Cof"/>
+<Product specieID="Cofactin"/>
+
+<forwardRate> 0.01</forwardRate>
+<reverseRate> 0 </reverseRate>
+</Reaction>
+
+
 </ReactionScheme>
