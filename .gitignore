@@ -1,0 +1,13 @@
+*pyc
+.out
+*.h5
+*.log
+*~
+*#
+*.dat
+*.npz
+*.sasparams
+*.png
+*.bat
+*.
+*.txt
