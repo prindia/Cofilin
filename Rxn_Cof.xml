@@ -10,23 +10,23 @@ phosphatase reactions take from revision of Gs to improve Ca dep dphos of Dp32--
 <!-- Molecules species and diffusion constants -->
 
 
-<Specie kdiffunit="mu2/s" kdiff="7" id="Cof" name="Cof"/>
-<Specie kdiffunit="mu2/s" kdiff="7" id="pCof" name="pCof"/>
-<Specie kdiffunit="mu2/s" kdiff="7" id="pLIMKCof" name="pLIMKCof"/>
-<Specie kdiffunit="mu2/s" kdiff="7" id="LIMK" name="LIMK"/>
-<Specie kdiffunit="mu2/s" kdiff="7" id="pLIMK" name="pLIMK"/>
-<Specie kdiffunit="mu2/s" kdiff="7" id="RacPAKLIMK" name="RacPAKLIMK"/>
-<Specie kdiffunit="mu2/s" kdiff="7" id="PAK" name="PAK"/>
-<Specie kdiffunit="mu2/s" kdiff="7" id="RacPAK" name="RacPAK"/>
-<Specie kdiffunit="mu2/s" kdiff="7" id="RacGTP" name="RacGTP"/>
-<Specie kdiffunit="mu2/s" kdiff="7" id="RacGDP" name="RacGDP"/>
-<Specie kdiffunit="mu2/s" kdiff="7" id="RacGap" name="RacGap"/>
-<Specie kdiffunit="mu2/s" kdiff="7" id="Gap" name="Gap"/>
+<Specie kdiffunit="mu2/s" kdiff="2.6" id="Cof" name="Cof"/>
+<Specie kdiffunit="mu2/s" kdiff="10.5" id="pCof" name="pCof"/>
+<Specie kdiffunit="mu2/s" kdiff="0" id="pLIMKCof" name="pLIMKCof"/>
+<Specie kdiffunit="mu2/s" kdiff="6.7" id="LIMK" name="LIMK"/>
+<Specie kdiffunit="mu2/s" kdiff="6.7" id="pLIMK" name="pLIMK"/>
+<Specie kdiffunit="mu2/s" kdiff="0" id="RacPAKLIMK" name="RacPAKLIMK"/>
+<Specie kdiffunit="mu2/s" kdiff="7.1" id="PAK" name="PAK"/>
+<Specie kdiffunit="mu2/s" kdiff="7.1" id="RacPAK" name="RacPAK"/>
+<Specie kdiffunit="mu2/s" kdiff="10.18" id="RacGTP" name="RacGTP"/>
+<Specie kdiffunit="mu2/s" kdiff="0" id="RacGDP" name="RacGDP"/>
+<Specie kdiffunit="mu2/s" kdiff="0" id="RacGap" name="RacGap"/>
+<Specie kdiffunit="mu2/s" kdiff="6.8" id="Gap" name="Gap"/>
 
-<Specie kdiffunit="mu2/s" kdiff="7" id="pKalRac" name="pKalRac"/>
-<Specie kdiffunit="mu2/s" kdiff="7" id="pKal" name="pKal"/>
-<Specie kdiffunit="mu2/s" kdiff="7" id="KalCKpCamCa4" name="KalCKpCamCa4"/>
-<Specie kdiffunit="mu2/s" kdiff="7" id="Kal" name="Kal"/>
+<Specie kdiffunit="mu2/s" kdiff="5.0" id="pKalRac" name="pKalRac"/>
+<Specie kdiffunit="mu2/s" kdiff="5.0" id="pKal" name="pKal"/>
+<Specie kdiffunit="mu2/s" kdiff="0" id="KalCKpCamCa4" name="KalCKpCamCa4"/>
+<Specie kdiffunit="mu2/s" kdiff="5.0" id="Kal" name="Kal"/>
 
 <Specie name="CaN"           id="CaN"          kdiff="0"     kdiffunit="mu2/s"/>
 <Specie name="CaNCam"        id="CaNCam"       kdiff="0"     kdiffunit="mu2/s"/>
@@ -35,10 +35,10 @@ phosphatase reactions take from revision of Gs to improve Ca dep dphos of Dp32--
 <Specie name="CaNCamCa4"        id="CaNCamCa4"       kdiff="0"     kdiffunit="mu2/s"/>
 <Specie name="CaNCamCa4pSSH"        id="CaNCamCa4pSSH"       kdiff="0"     kdiffunit="mu2/s"/>
 <Specie name="pSSH"        id="pSSH"       kdiff="0"     kdiffunit="mu2/s"/>
-<Specie kdiffunit="mu2/s" kdiff="7" id="SSH" name="SSH"/>
-<Specie kdiffunit="mu2/s" kdiff="7" id="SSHpLIMK" name="SSHpLIMK"/>
-<Specie kdiffunit="mu2/s" kdiff="7" id="SSHpCof" name="SSHpCof"/>
-<Specie kdiffunit="mu2/s" kdiff="7" id="RacPAKSSH" name="RacPAKSSH"/>
+<Specie kdiffunit="mu2/s" kdiff="5.6" id="SSH" name="SSH"/>
+<Specie kdiffunit="mu2/s" kdiff="0" id="SSHpLIMK" name="SSHpLIMK"/>
+<Specie kdiffunit="mu2/s" kdiff="0" id="SSHpCof" name="SSHpCof"/>
+<Specie kdiffunit="mu2/s" kdiff="0" id="RacPAKSSH" name="RacPAKSSH"/>
 
 
 <!-- calcium reaction subset, to adjust for proper basal calcium -->
@@ -124,19 +124,26 @@ phosphatase reactions take from revision of Gs to improve Ca dep dphos of Dp32--
   <Specie name="PDE1CamCa4cAMP" id="PDE1CamCa4cAMP" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="PDE4" id="PDE4" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="PDE4cAMP" id="PDE4cAMP" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="PKAcPDE4" id="PKAcPDE4" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="pPDE4" id="pPDE4" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="pPDE4cAMP" id="pPDE4cAMP" kdiff="0" kdiffunit="mu2/s"/>
+  <Specie name="PKAc_PDE4_cAMP" id="PKAc_PDE4_cAMP" kdiff="0" kdiffunit="mu2/s"/> 
   <Specie name="PDE2" id="PDE2" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="PDE2cAMP" id="PDE2cAMP" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="PDE2cAMP2" id="PDE2cAMP2" kdiff="0" kdiffunit="mu2/s"/>
 
-<Specie name="PKAcAMP2"                            id="PKAcAMP2"                kdiff="0.836"    kdiffunit="mu2/s"/>
-<Specie name="PKAcAMP4"                            id="PKAcAMP4"                kdiff="0.836"    kdiffunit="mu2/s"/>
-<Specie name="PKA"                                 id="PKA"                kdiff="0.836"    kdiffunit="mu2/s"/>
-<Specie name="PKAc"                                id="PKAc"                kdiff="0.836"    kdiffunit="mu2/s"/>
-<Specie name="PKAr"                                id="PKAr"                kdiff="0.836"    kdiffunit="mu2/s"/>
-<Specie name="KalPKAc"                             id="KalPKAc"                kdiff="0.836"    kdiffunit="mu2/s"/>
-<Specie name="PKAcLIMK"                            id="PKAcLIMK"              kdiff="7"         kdiffunit="mu2/s"/>
+  <Specie name="PKAcAMP2"                            id="PKAcAMP2"                kdiff="0"    kdiffunit="mu2/s"/>
+  <Specie name="PKAcAMP4"                            id="PKAcAMP4"                kdiff="0"    kdiffunit="mu2/s"/>
+  <Specie name="PKA"                                 id="PKA"                kdiff="0"    kdiffunit="mu2/s"/>
+  <Specie name="PKAc"                                id="PKAc"                kdiff="0.836"    kdiffunit="mu2/s"/>
+  <Specie name="PKAr"                                id="PKAr"                kdiff="0"    kdiffunit="mu2/s"/>
+  <Specie name="KalPKAc"                             id="KalPKAc"                kdiff="0"    kdiffunit="mu2/s"/>
+  <Specie name="PKAcLIMK"                            id="PKAcLIMK"              kdiff="0"         kdiffunit="mu2/s"/>
 
-    
+<!-- actin binding to Cof -->    
+<Specie name="actin"                            id="actin"                kdiff="0"    kdiffunit="mu2/s"/>
+<Specie name="Cofactin"                            id="Cofactin"                kdiff="0"    kdiffunit="mu2/s"/>
+
 <!--****************************************************************************
 Now, the reactions themselves
 ****************************************************************************-->
@@ -429,8 +436,8 @@ Now, the reactions themselves
 <Product specieID="RacPAKSSH"/>
 
 <!--forwardRate> 0</forwardRate-->
-<forwardRate> 0.0000425e-3 </forwardRate>
-<reverseRate> 0.136e-3 </reverseRate>
+<forwardRate> 0.002116667e-3 </forwardRate>
+<reverseRate> 5.08e-3 </reverseRate>
 </Reaction>
 
 <Reaction id="RacPAK+SSH--pSSH+RacPAK" name="RacPAK+SSH--pSSH+RacPAK">
@@ -438,7 +445,7 @@ Now, the reactions themselves
 <Product specieID="pSSH"/>
 <Product specieID="RacPAK"/>
 
-<forwardRate> 0.034e-3 </forwardRate>
+<forwardRate> 1.27e-3 </forwardRate>
 <reverseRate> 0 </reverseRate>
 
 </Reaction>
@@ -474,8 +481,8 @@ Now, the reactions themselves
 <Product specieID="SSHpLIMK"/>
 
 
-<forwardRate> 0.00017e-3 </forwardRate>
-<reverseRate> 0.272e-3 </reverseRate>
+<forwardRate> 0.0001275e-3 </forwardRate>
+<reverseRate> 0.408e-3 </reverseRate>
 
 </Reaction>
 
@@ -485,7 +492,7 @@ Now, the reactions themselves
 <Product specieID="SSH"/>
 <Product specieID="LIMK"/>
 
-<forwardRate> 0.068e-3 </forwardRate>
+<forwardRate> 0.102e-3 </forwardRate>
 <reverseRate> 0 </reverseRate>
 </Reaction>
 
@@ -1292,6 +1299,74 @@ Now, the reactions themselves
         <reverseRate> 0            </reverseRate>
 </Reaction>
 
+   <!--   PKAc + PDE4 -> PKAcPDE4 -->
+    <Reaction name = "PDE4 phosp1" id="phospPDE41">
+        <Reactant specieID="PKAc"            />
+        <Reactant specieID="PDE4"           />
+        <Product  specieID="PKAcPDE4"       />
+        <forwardRate> 4.28e-7  </forwardRate>
+        <reverseRate>  0.00056    </reverseRate>
+        <Q10>         0.2          </Q10>
+    </Reaction>
+
+    <!--   PKAcPDE4 -> PKAc + pPDE4 -->
+    <Reaction name = "PDE4 phosp2" id="phospPDE42">
+        <Reactant specieID="PKAcPDE4"       />
+        <Product  specieID="pPDE4"          />
+        <Product  specieID="PKAc"            />
+        <forwardRate> 0.000125     </forwardRate>
+        <reverseRate> 0            </reverseRate>
+        <Q10>         0.2          </Q10>
+    </Reaction>
+
+    <!--   pPDE4 -> PDE4 -->
+    <Reaction name = "PDE4 d_phosp" id="dphospPDE4">
+        <Reactant specieID="pPDE4"          />
+        <Product  specieID="PDE4"           />
+        <forwardRate> 2.5e-6    </forwardRate>
+        <reverseRate> 0            </reverseRate>
+        <Q10>         0.2          </Q10>
+    </Reaction>
+
+    <!--   cAMP + pPDE4  <-> pPDE4cAMP -->
+    <Reaction name = "pPDE4 enzyme1" id="pPDE4bind">
+        <Reactant specieID="pPDE4"           />
+        <Reactant specieID="cAMP"             />
+        <Product  specieID="pPDE4cAMP"       />
+        <forwardRate> 0.000433175   </forwardRate>
+        <reverseRate> 1.379 </reverseRate>
+        <Q10>         0.2          </Q10>
+    </Reaction>
+
+    <!--   pPDE4cAMP -> AMP + pPDE4 -->
+    <Reaction name = "pPDE4 actvcomp" id="pPDE4cat">
+        <Reactant specieID="pPDE4cAMP"       />
+        <Product  specieID="pPDE4"           />
+        <Product  specieID="AMP"              />
+        <forwardRate>0.3446674   </forwardRate>
+        <reverseRate> 0            </reverseRate>
+        <Q10>         0.2          </Q10>
+    </Reaction>
+
+    <!--   PDE4cAMP + PKAc  <-> PKAc_PDE4_cAMP -->
+    <Reaction name = "PKAc_PDE4_cAMP-bind" id="PKAc_PDE4_cAMP-bind">
+        <Reactant specieID="PDE4cAMP"        />
+        <Reactant specieID="PKAc"             />
+        <Product  specieID="PKAc_PDE4_cAMP"  />
+        <forwardRate> 4.280e-7  </forwardRate>
+        <reverseRate>  0.00056    </reverseRate>
+        <Q10>         0.2          </Q10>
+    </Reaction>
+
+    <!--  PKAc_PDE4_cAMP -> pPDE4cAMP + PKAc -->
+    <Reaction name = "PKAc_PDE4_cAMP-diss" id="PKAc_PDE4_cAMP-diss">
+        <Reactant specieID="PKAc_PDE4_cAMP"  />
+        <Product  specieID="pPDE4cAMP"       />
+        <Product  specieID="PKAc"             />
+        <forwardRate> 0.000125    </forwardRate>
+        <reverseRate> 0            </reverseRate>
+        <Q10>         0.2          </Q10>
+    </Reaction>
       
     
  <!-- PDE2 buff for cAMP, two steps-->
@@ -1354,5 +1429,18 @@ Now, the reactions themselves
 	<reverseRate>0</reverseRate>
 	<Q10>0.2</Q10>
        </Reaction>
-       
+
+
+
+<!--Actin binding to -->
+<Reaction id= "actin+Cof--Cofactin" name="actin+Cof--Cofactin">
+<Reactant specieID="actin"/>
+<Reactant specieID="Cof"/>
+<Product specieID="Cofactin"/>
+
+<forwardRate> 0.001e-9</forwardRate>
+<reverseRate> 0 </reverseRate>
+</Reaction>
+
+
 </ReactionScheme>

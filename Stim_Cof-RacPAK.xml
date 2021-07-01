@@ -1,0 +1,50 @@
+
+<StimulationSet>
+
+  <!--onset and duration in ms, rate in particles/ms-->
+
+
+<InjectionStim specieID="RacPAK" injectionSite="sa1[0].pointA">
+  
+        <onset>               100000          </onset>
+        <duration>        5         </duration> 
+        <rate>             13      </rate>
+   
+		
+</InjectionStim>
+
+
+<InjectionStim specieID="RacPAK" injectionSite="sa1[0].pointA">
+  
+        <onset>               100020          </onset>
+        <duration>        900         </duration> 
+        <rate>             5      </rate>
+   
+		
+</InjectionStim>
+
+
+<InjectionStim specieID="RacPAK" injectionSite="dend:submembrane">
+  
+        <onset>               100000          </onset>
+        <duration>        5         </duration> 
+        <rate>             13       </rate>
+   
+		
+</InjectionStim>
+
+
+<InjectionStim specieID="RacPAK" injectionSite="dend:submembrane">
+  
+        <onset>               100020          </onset>
+        <duration>        900         </duration> 
+        <rate>             5       </rate>
+   
+		
+</InjectionStim>
+
+
+
+
+
+</StimulationSet>

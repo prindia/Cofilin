@@ -83,6 +83,7 @@ So the "io file" will be dependent on information stated in the
   <OutputSpecie name="LR"/>
   <OutputSpecie name="LRGs"/>
   <OutputSpecie name="PKAcLR"/>
+  <OutputSpecie name="PKAcpLR"/>
   <OutputSpecie name="PKAcppLR"/>
   <OutputSpecie name="pLR"/>
   <OutputSpecie name="ppLR"/>
@@ -114,6 +115,10 @@ So the "io file" will be dependent on information stated in the
   <OutputSpecie name="AC8CamCa4ATP"/>
   <OutputSpecie name="PDE4"/>
   <OutputSpecie name="PDE4cAMP"/>
+  <OutputSpecie name="PKAcPDE4"/>
+  <OutputSpecie name="pPDE4"/>
+  <OutputSpecie name="pPDE4cAMP"/>
+  <OutputSpecie name="PKAc_PDE4_cAMP"/>
   <OutputSpecie name="PDE2"/>
   <OutputSpecie name="PDE2cAMP"/>
   <OutputSpecie name="PDE2cAMP2"/>
@@ -126,6 +131,9 @@ So the "io file" will be dependent on information stated in the
   <OutputSpecie name="PKAc"/>
   <OutputSpecie name="PKAr"/>
   <OutputSpecie name="KalPKAc"/>
+  
+  <OutputSpecie name="actin"/>
+  <OutputSpecie name="Cofactin"/>
 
 
 </OutputSet>
